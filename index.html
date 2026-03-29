@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Amma ❤️ & Mama 🎉</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Pacifico&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ffe6f0, #f3e7ff, #fff5f8);
+    scroll-behavior: smooth;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ff9ecb, #ffc3d9);
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3.5rem;
+}
+
+.hero p {
+    opacity: 0.8;
+}
+
+/* BUTTON */
+.btn {
+    padding: 14px 30px;
+    background: linear-gradient(45deg, #ff4d88, #ff80aa);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 0 6px 15px rgba(255, 77, 136, 0.4);
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+/* SECTIONS */
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* GLASS CARD */
+.glass {
+    background: rgba(255,255,255,0.4);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 650px;
+    margin: auto;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* VIDEO */
+video {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* TEXT */
+.quote {
+    margin-top: 20px;
+    color: #cc0066;
+    font-weight: 500;
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 700px;
+    margin: auto;
+}
+
+.card {
+    background: rgba(255,255,255,0.7);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+/* SURPRISE */
+#surpriseMessage {
+    display: none;
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+/* FOOTER */
+footer {
+    padding: 20px;
+    background: rgba(255,200,220,0.6);
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Happy Birthday Amma ❤️ & Mama 🎉</h1>
+    <p>Celebrating your beautiful bond 💕</p>
+    <button class="btn" onclick="startExperience()">Start Journey</button>
+</section>
+
+<!-- VIDEO -->
+<section id="video">
+    <div class="glass">
+        <h2>Their Journey Together 👶➡️👨‍👩‍👧</h2>
+
+        <p>
+        From childhood giggles to lifelong memories…  
+        this is a journey of a bond that never changed ❤️
+        </p>
+
+        <video id="memoryVideo" controls muted>
+            <source src="C:\Users\G.Sruthi\Downloads\siblings.mp4" type="video/mp4">
+        </video>
+
+        <p class="quote">
+            Some bonds aren't just relationships… they are lifelong friendships ❤️
+        </p>
+    </div>
+</section>
+
+<!-- MESSAGE -->
+<section>
+    <h2>Why You Both Mean So Much 💌</h2>
+
+    <div class="cards">
+        <div class="card">You both taught me what family truly means ❤️</div>
+        <div class="card">Your bond is my biggest inspiration</div>
+        <div class="card">You make every moment special</div>
+        <div class="card">Endless love, endless support 💕</div>
+    </div>
+</section>
+
+<!-- SURPRISE -->
+<section>
+    <h2>Something Special 🎁</h2>
+    <button class="btn" onclick="showSurprise()">Click Here</button>
+
+    <p id="surpriseMessage">
+        Hey there... many more happy returns of the day amma and mama 💖  
+        I hope you both live a long and happy life.  
+        You are the best siblings I have ever seen growing up 🥹  
+    </p>
+</section>
+
+<footer>
+    <p>Made with ❤️ by me</p>
+</footer>
+
+<script>
+function scrollToSection(id) {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+}
+
+function startExperience() {
+    scrollToSection('video');
+}
+
+function showSurprise() {
+    document.getElementById("surpriseMessage").style.display = "block";
+}
+</script>
+
+</body>
+</html>
